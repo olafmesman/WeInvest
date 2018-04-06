@@ -8,7 +8,7 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 switch ($request_uri[0]) {
 	// Home page
 	case '/':
-		require './screens/home.php';
+		require './screens/landing-page.php';
 		break;
 	// Login page
 	case '/login':
