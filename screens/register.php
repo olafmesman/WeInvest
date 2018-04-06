@@ -4,9 +4,7 @@
 <body>
 
 <main>
-
-	<?php include 'components/login.php'; ?>
-
+	<h1>register</h1>
 </main>
 
 <script src="/dist/app.js"></script>

@@ -1,0 +1,40 @@
+.login-wrap {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	width: 100%;
+	margin: auto;
+	padding: $gutter;
+}
+
+.login-button {
+	width: 100%;
+	padding: $gutter 0;
+}
+
+.login-button button {
+	width: 100%;
+}
+
+.register-link {
+	width: 100%;
+	text-align: center;
+}
+
+.register-link a {
+	color: $color-primary;
+	transition: 0.4s color ease;
+	text-decoration: none;
+
+	&:hover {
+		color: lighten($color-primary, 10%);
+		background-color: transparent;
+	}
+}

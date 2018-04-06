@@ -38,7 +38,19 @@ const clientSetup = {
 					}, {
 						loader: 'sass-loader',
 						options: {
-							sourceMap: true
+							sourceMap: true,
+							importer: function(url, prev) {
+								if (url.indexOf('@material') === 0) {
+									const filePath = url.split('@material')[1];
+									const nodeModulePath = `./node_modules/@material/${filePath}`;
+									return {
+										file: require('path').resolve(nodeModulePath)
+									};
+								}
+								return {
+									file: url
+								};
+							}
 						}
 					}, {
 						loader: 'import-glob-loader'
