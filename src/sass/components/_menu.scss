@@ -1,0 +1,25 @@
+// ========================================================
+
+// # MENU
+
+.menu {
+	margin-bottom: $gutter*2;
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	z-index: 1;
+}
+
+.menu__list {
+	justify-content: space-between;
+}
+
+.menu__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $color-text;
+}
+
+.menu__link--active {
+	border-bottom: $color-primary 2px solid;
+}

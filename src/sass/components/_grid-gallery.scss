@@ -1,0 +1,65 @@
+// ========================================================
+
+// # GRID GALLERY
+
+.grid-gallery__cell {
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    }
+}
+
+.grid-gallery__link {
+    display: flex;
+    width: 100%;
+    height: 125px;
+    align-items: flex-end;
+    position: relative;
+    font-size: 1.6rem;
+    color: $color-text;
+    text-decoration: none;
+}
+
+.grid-gallery__link--large {
+    height: 270px;
+}
+
+.grid-gallery__link--more {
+	border-radius: $radius-border;
+	background-color: $color-primary;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-gallery__link h3 {
+    text-transform: uppercase;
+}
+
+.grid-gallery__link p {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: $view-tablet-portrait) {
+    .grid-gallery__link h3 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: $view-tablet-landscape) {
+    .grid-gallery__link h3 {
+        font-size: 1.2rem;
+    }
+}
