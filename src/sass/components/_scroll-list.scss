@@ -1,0 +1,44 @@
+// ========================================================
+
+// # SCROLL LIST
+
+.scroll-list {
+	white-space: nowrap;
+	overflow: auto;
+	height: 100%;
+	font-size: 0;
+	-ms-overflow-style: none;  // IE 10+
+	overflow: -moz-scrollbars-none; // Firefox
+	-webkit-overflow-scrolling: touch;
+	margin: 0 (-$gutter);
+	padding: 0 $gutter;
+}
+
+.scroll-list::-webkit-scrollbar {
+	display: none;  // Safari and Chrome
+}
+
+.scroll-list li {
+	white-space: normal;
+    display: inline-flex;
+    width: 40%;
+    min-width: 250px;
+    max-width: 350px;
+    background-size: cover;
+    background-position: 50%;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    min-height: 230px;
+    position: relative;
+    vertical-align: top;
+    margin: 0 $gutter/2;
+
+	&:first-of-type {
+    	margin-left: 0;
+    }
+
+    &:last-of-type {
+    	margin-right: 0;
+    }
+}
