@@ -1,0 +1,27 @@
+{
+  "name": "WeInvest",
+  "version": "1.0.0",
+  "description": "we invest hackathon",
+  "main": "index.js",
+  "repository": "git@github.com:olafmesman/WeInvest.git",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/polyfill": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-stage-2": "^7.0.0-beta.44",
+    "@babel/register": "^7.0.0-beta.44",
+    "babel-loader": "^7.1.4",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "import-glob-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
