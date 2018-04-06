@@ -4,7 +4,9 @@
 <body>
 
 <main>
-	<h1>register</h1>
+
+	<?php include 'components/register.php'; ?>
+
 </main>
 
 <script src="/dist/app.js"></script>
