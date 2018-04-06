@@ -1,0 +1,45 @@
+// ========================================================
+
+// Button
+//
+// Buttons used for ...
+//
+// Markup:
+// <a href="#" class="btn {{modifier_class}}">Button Element</a>
+//
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .btn--ghost - A small button.
+// .btn--ghost:hover - A small button.
+// .btn--ghost:focus - A small button.
+//
+// Style guide: 4-Components.Buttons
+
+.btn {
+	display: inline-block;
+	padding: $gutter/2;
+	background-color: $color-primary;
+	color: #FFF;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #FFF;
+		color: $color-primary;
+	}
+}
+
+.btn--primary {
+	background-color: $color-secondary;
+	color: $color-primary;
+	padding: $gutter/2 $gutter*2;
+	border-radius: 40px;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $color-tertiary;
+		color: $color-primary;
+	}
+}
