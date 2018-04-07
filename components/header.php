@@ -1,13 +1,16 @@
 <header class="mdc-top-app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <a class="mdc-tab mdc-tab--with-icon-and-text" href="#home">
-        <i class="material-icons mdc-tab__icon" aria-hidden="true">home</i>
-        <span class="mdc-tab__icon-text">HOME</span>
-      </a>
+      <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text">
+        <img class="logo" src="assets/we_invest-2.png"/>
+      </nav>
     </section>
     <section id="iconSection" class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
       <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text">
+        <a class="mdc-tab mdc-tab--with-icon-and-text" href="#home">
+          <i class="material-icons mdc-tab__icon" aria-hidden="true">home</i>
+          <span class="mdc-tab__icon-text">HOME</span>
+        </a>
         <a class="mdc-tab mdc-tab--with-icon-and-text" href="#matches">
           <i class="material-icons mdc-tab__icon" aria-hidden="true">people</i>
           <span class="mdc-tab__icon-text">Matches</span>

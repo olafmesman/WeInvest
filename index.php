@@ -6,9 +6,13 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 
 // Route it up!
 switch ($request_uri[0]) {
-	// Home page
+	// Landing page
 	case '/':
 		require './screens/landing-page.php';
+		break;
+	// Landing page
+	case '/home':
+		require './screens/home.php';
 		break;
 	// Login page
 	case '/login':
