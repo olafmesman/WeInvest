@@ -14,17 +14,19 @@ if (isset($_SESSION['user_id'])) {
     session_start();
 }
 
+$select_user = "SELECT email FROM %s WHERE email = '%s'";
+
 // Login as investor.
-$select_user = "SELECT email FROM investors WHERE email = ".$_POST['email'];
-$user = fetch_record($select_user);
+$user = fetch_all(sprintf($select_user, "investors", $_POST['email']));
 if (sizeof($user)!=0) {
+    $_SESSION['login_errors'] = var_dump($user);
     $_SESSION['user_type'] = 'investor';
     $_SESSION['user_id'] = 1;
     header("Location: /feed");
 }
+
 // Login as entrepreneur.
-$select_user = "SELECT email FROM entrepreneurs WHERE email = ".$_POST['email'];
-$user = fetch_record($select_user);
+$user = fetch_all(sprintf($select_user, "entrepreneurs", $_POST['email']));
 if (sizeof($user)!=0) {
     $_SESSION['user_type'] = 'entrepreneur';
     $_SESSION['user_id'] = 1;
