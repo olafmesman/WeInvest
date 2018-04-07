@@ -8,7 +8,7 @@
 	    <div class="component-wrapper">
 	      <h1>Your exclusive peer-group</h1>
 	      <p>Here you can see the entrepreneurs that fit your criteria</p>
-				<button class="mdc-button" href="/matchmaker">Edit</button>
+				<button class="mdc-button mdc-button-no-margin" href="/matchmaker">Edit</button>
 	  </div>
 	  </div>
 	</body>

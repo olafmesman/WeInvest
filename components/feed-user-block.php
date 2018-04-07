@@ -13,6 +13,6 @@
 		<p class="user-block__description">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur corporis enim laborum nam.
 		</p>
-    <button class="mdc-button" href="/profile">Go to profile</button>
+    <button class="mdc-button mdc-button-margin" href="/profile">Go to profile</button>
 	</div>
 </div>
