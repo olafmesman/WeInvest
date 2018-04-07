@@ -8,6 +8,8 @@
 
 	<?php include 'components/user-block.php'; ?>
 
+	<?php include 'components/match-making-widget.php'; ?>
+
 </main>
 
 <script src="/dist/app.js"></script>
