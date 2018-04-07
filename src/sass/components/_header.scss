@@ -27,6 +27,9 @@
 .mdc-top-app-bar {
   overflow: hidden;
   background-color: $color-primary;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .mdc-tab--with-icon-and-text:hover {

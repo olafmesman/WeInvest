@@ -6,7 +6,7 @@
 
 <main>
 
-	<?php include 'components/investor-block.php'; ?>
+	<?php include 'components/match-making-machine-sliders.php'; ?>
 
 </main>
 
