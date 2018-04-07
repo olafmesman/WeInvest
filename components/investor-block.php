@@ -1,8 +1,8 @@
 <div class="user-block-wrap">
 	<div class="user-block">
 
-		<div class="user-block__company-logo">
-			<img src="/dist/assets/images/placeholder-logo.svg" alt="">
+		<div class="user-block__company-logo investor">
+			<img src="/assets/profile_pictures_investors/image1_investor.png" alt="">
 		</div>
 
 		<div class="user-block__name-picture-wrap">

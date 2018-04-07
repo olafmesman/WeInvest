@@ -17,8 +17,19 @@ VALUES (
     '/assets/profile_icon_entrepreneurs/entrepreneurs_icon2.png'
 );
 INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_profiles_id)
-VALUES ('samtettey@gmail.com', 'asdf', 'Sam', 'Tettey', 1);
+VALUES ('samtettey@gmail.com', 'asdf', 'Sam', 'Tettey', 2);
 
+
+
+INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
+VALUES (
+    'My TicketGH provides E-ticketing services to consumers and players within the transport and event industry. We allows consumers to purchase their tickets by just a click of the mouse button of your computer or a tap on the keypad of your cell phone and tablet. Besides the E-ticketing services, MyTicketGH also has IT transformation software packages for bus operators that help them digitalizing their processes on the aspects of sales, customer data, CRM and reporting.',
+    '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile3.jpg',
+    '/assets/profile_icon_entrepreneurs/pitch1.png',
+    '/assets/profile_icon_entrepreneurs/lead_icon1.png'
+);
+INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_profiles_id)
+VALUES ('younesdouari@gmail.com', 'asdf', 'Younes', 'Douari', 3);
 
 INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
 VALUES (
@@ -28,7 +39,7 @@ VALUES (
     '/assets/profile_icon_entrepreneurs/entrepreneurs_icon3.png'
 );
 INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_profiles_id)
-VALUES ('saqibnazir@gmail.com', 'asdf', 'Saqib', 'Nazir', 1);
+VALUES ('saqibnazir@gmail.com', 'asdf', 'Saqib', 'Nazir', 4);
 
 
 INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
@@ -39,7 +50,7 @@ VALUES (
     '/assets/profile_icon_entrepreneurs/entrepreneurs_icon4.png'
 );
 INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_profiles_id)
-VALUES ('charlesowusu@gmail.com', 'asdf', 'Charles', 'Owusu', 1);
+VALUES ('charlesowusu@gmail.com', 'asdf', 'Charles', 'Owusu', 5);
 
 
 INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
@@ -49,7 +60,7 @@ VALUES (
     'https://www.youtube.com/embed/biqyq0PTEUM?rel=0&amp;controls=0&amp;showinfo=0',
     '/assets/profile_icon_entrepreneurs/entrepreneurs_icon5.png');
 INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_profiles_id)
-VALUES ('hannaowusu@gmail.com', 'asdf', 'Hanna', 'Owusu', 1);
+VALUES ('hannaowusu@gmail.com', 'asdf', 'Hanna', 'Owusu', 6);
 
 
 INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
@@ -60,17 +71,9 @@ VALUES (
     '/assets/profile_icon_entrepreneurs/entrepreneurs_icon6.png'
 );
 INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_profiles_id)
-VALUES ('kyraelhalabi@gmail.com', 'asdf', 'Kyra', 'El Halabi', 1);
+VALUES ('kyraelhalabi@gmail.com', 'asdf', 'Kyra', 'El Halabi', 7);
 
 
 INSERT INTO investors (email, password, first_name, last_name) VALUES ('investor@gmail.com', 'asdf', 'Investor', 'the Great');
 
 
-
-INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
-VALUES (
-  'My TicketGH provides E-ticketing services to consumers and players within the transport and event industry. We allows consumers to purchase their tickets by just a click of the mouse button of your computer or a tap on the keypad of your cell phone and tablet. Besides the E-ticketing services, MyTicketGH also has IT transformation software packages for bus operators that help them digitalizing their processes on the aspects of sales, customer data, CRM and reporting.'
-    '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile3.jpg',
-    '/assets/profile_icon_entrepreneurs/pitch1.png',
-    '/assets/profile_icon_entrepreneurs/lead_icon1.png'
-);

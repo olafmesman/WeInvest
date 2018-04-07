@@ -7,8 +7,11 @@
 <main>
 
 	<?php include 'components/user-block.php'; ?>
-
-	<?php //include 'components/match-making-widget.php'; ?>
+    <?php
+    foreach (fetch_all("SELECT * FROM posts WHERE entrepreneurs_id = ".$user['id']) as &$post) {
+        include 'components/post.php';
+    }
+    ?>
 
 </main>
 

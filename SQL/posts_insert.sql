@@ -10,18 +10,33 @@ INSERT INTO posts (content, image_url, entrepreneurs_id) VALUES ('Forty-four cou
   '/assets/data_feed_photos/datafeed_picture4.png',
   4);
 
-INSERT INTO posts (content, image_url, entrepreneurs_id) VALUES ('Our CEO, Ezekiel Nwankwo, addressing the problem of infrastructure planning during the 2018 Innovation Summit in Nairobi.',
-  '/assets/data_feed_photos/datafeed_picture5.png',
-  5);
-
+-- INSERT INTO posts (content, image_url, entrepreneurs_id) VALUES ('Our CEO, Ezekiel Nwankwo, addressing the problem of infrastructure planning during the 2018 Innovation Summit in Nairobi.',
+--   '/assets/data_feed_photos/datafeed_picture5.png',
+--   5);
+-- 
+INSERT INTO posts (content, image_url, entrepreneurs_id)
+ VALUES (
+   'Test content verhaal voor de lead entrepreneurs. Test content verhaal voor de lead entrepreneurs.',
+   '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile1.jpg',
+   3);    INSERT INTO posts (content, image_url, entrepreneurs_id)
+   VALUES (
+     'Test content verhaal voor de lead entrepreneurs. Test content verhaal voor de lead entrepreneurs',
+     '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile2.jpg',
+     3);      INSERT INTO posts (content, image_url, entrepreneurs_id)
+     VALUES (
+       'Test content verhaal voor de lead entrepreneurs. Test content verhaal voor de lead entrepreneurs.',
+       '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile3.jpg',
+       3);        INSERT INTO posts (content, image_url, entrepreneurs_id)
+       VALUES (
+         'Test content verhaal voor de lead entrepreneurs.Test content verhaal voor de lead entrepreneurs.',
+         '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile4.jpg',
+         3);          INSERT INTO posts (content, image_url, entrepreneurs_id)
+         VALUES (
+           'Test content verhaal voor de lead entrepreneurs.Test content verhaal voor de lead entrepreneurs.',
+           '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile5.jpg',
+           3);
 INSERT INTO posts (content, image_url, entrepreneurs_id)
 VALUES (
   'The first EY Hackathon Kenya is a fact. The winning team will be entering WeInvest on August 1st. 40% of the hackers where provided from out the WeInvest-community.',
   '/assets/data_feed_photos/datafeed_picture6.png',
   2);
-
-  INSERT INTO posts (content, image_url, entrepreneurs_id)
-  VALUES (
-    '',
-    '/assets/data_feed_photos/entrepreneur_leadprofile1.jpg',
-    3);
