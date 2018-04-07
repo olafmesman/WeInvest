@@ -16,13 +16,13 @@ if (isset($_SESSION['user_id'])) {
 if ($_POST['email'] == 'investor@gmail.com') {
     $_SESSION['user_type'] = 'entrepreneur';
     $_SESSION['user_id'] = 1;
-    header("Location: /profile");
+    header("Location: /feed");
 }
 // Login as investor.
-else if ($_POST['email'] == 'eunice@gmail.com') {
+else if ($_POST['email'] == 'eunice@gmail.com' || $_POST['email'] == 'entrepreneur@gmail.com') {
     $_SESSION['user_type'] = 'investor';
     $_SESSION['user_id'] = 1;
-    header("Location: /feed");
+    header("Location: /profile");
 }
 // Give error that login didn't work.
 else {
