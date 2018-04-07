@@ -10,7 +10,7 @@
     </section>
     <section id="iconSection" class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
       <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text">
-        <a class="mdc-tab mdc-tab--with-icon-and-text" href="#login">
+        <a class="mdc-tab mdc-tab--with-icon-and-text" href="/login">
           <i class="material-icons mdc-tab__icon" aria-hidden="true">person</i>
           <span class="mdc-tab__icon-text">Login</span>
         </a>

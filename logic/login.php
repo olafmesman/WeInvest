@@ -14,23 +14,22 @@ if (isset($_SESSION['user_id'])) {
     session_start();
 }
 
-$select_user = "SELECT email FROM %s WHERE email = '%s'";
+$select_user = "SELECT id FROM %s WHERE email = '%s'";
 
 // Login as investor.
-$user = fetch_all(sprintf($select_user, "investors", $_POST['email']));
-if (sizeof($user)!=0) {
-    $_SESSION['login_errors'] = var_dump($user);
+if (sizeof(fetch_all(sprintf($select_user, "investors", $_POST['email'])))!=0) {
     $_SESSION['user_type'] = 'investor';
-    $_SESSION['user_id'] = 1;
-    header("Location: /feed");
+    $_SESSION['user_id'] = fetch_all(sprintf($select_user, "investors",
+                                             $_POST['email']))[0]['id'];
+    header("Location: /profile/i/".$_SESSION['user_id']);
 }
-
 // Login as entrepreneur.
-$user = fetch_all(sprintf($select_user, "entrepreneurs", $_POST['email']));
-if (sizeof($user)!=0) {
+else if (sizeof(fetch_all(sprintf($select_user, "entrepreneurs",
+                                  $_POST['email'])))!=0) {
     $_SESSION['user_type'] = 'entrepreneur';
-    $_SESSION['user_id'] = 1;
-    header("Location: /profile");
+    $_SESSION['user_id'] = fetch_all(sprintf($select_user, "entrepreneurs",
+                                             $_POST['email']))[0]['id'];
+    header("Location: /profile/e/".$_SESSION['user_id']);
 }
 // Give error that login didn't work.
 else {
