@@ -18,6 +18,10 @@ switch ($request_uri[0]) {
 	case '/register':
 		require './screens/register.php';
 		break;
+	// Register page
+	case '/profile':
+		require './screens/profile-entrepreneur.php';
+		break;
 	// Everything else
 	default:
 		header('HTTP/1.0 404 Not Found');
