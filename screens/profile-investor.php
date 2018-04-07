@@ -2,11 +2,10 @@
 <html>
 <?php include 'components/head.php'; ?>
 <body>
-<?php include 'components/header.php'; ?>
 
 <main>
 
-	<?php include 'components/user-block.php'; ?>
+	<?php include 'components/investor-block.php'; ?>
 
 </main>
 

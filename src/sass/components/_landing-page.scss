@@ -1,26 +1,25 @@
 .general-wrapper {
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.component-wrapper {
+  max-width: 800px;
+}
+
 .components {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   margin: auto;
   padding: $gutter;
 }
 
 .description {
-  max-width: 300px;
-}
-
-.register-column {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
+  width: 100%;
+  margin-bottom: $gutter*3;
 }
 
 .register {
@@ -29,6 +28,32 @@
   flex-direction: row;
 }
 
+.register-column {
+  display: flex;
+  flex-direction: column;
+  flex: 10;
+  text-align: center;
+}
+
+.mdc-button-margin {
+  margin-top: 15px;
+}
+
 .mdc-tab .icon-black {
   color: black;
+}
+
+.handshake {
+  width: 100px;
+  height: 65px;
+  margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .register {
+    flex-direction: column;
+  }
+  .handshake {
+    margin: auto;
+  }
 }
