@@ -1,5 +1,6 @@
 import config from './config.babel';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const clientSetup = {
 	entry: {
@@ -73,7 +74,10 @@ const clientSetup = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: "[name].css"
-		})
+		}),
+		new CopyWebpackPlugin([
+			{ from: `${config.entry}/assets`, to: 'assets' }
+		])
 	]
 };
 

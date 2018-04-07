@@ -6,10 +6,16 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 
 session_start();
 
+require_once('./logic/connect.php');
+
 // Route it up!
 switch ($request_uri[0]) {
-	// Home page
+	// Landing page
 	case '/':
+		require './screens/landing-page.php';
+		break;
+	// Landing page
+	case '/home':
 		require './screens/home.php';
 		break;
 	// Login page
@@ -19,6 +25,11 @@ switch ($request_uri[0]) {
 	// Register page
 	case '/register':
 		require './screens/register.php';
+		break;
+	// Own profile page
+	case '/profile':
+        $user = fetch_record("SELECT CONCAT(e.first_name, ' ', e.last_name) as name, e.email as email, ep.description as description, ep.pitch_url as pitch_url FROM entrepreneurs as e JOIN entrepreneur_profiles as ep ON e.id = ep.id WHERE e.id=".$_SESSION['user_id']);
+		require './screens/profile-entrepreneur.php';
 		break;
 	// Everything else
 	default:
