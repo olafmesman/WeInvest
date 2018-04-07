@@ -63,4 +63,4 @@ INSERT INTO entrepreneurs (email, password, first_name, last_name, entrepreneur_
 VALUES ('kyraelhalabi@gmail.com', 'asdf', 'Kyra', 'El Halabi', 1);
 
 
-INSERT INTO investors (email, password, first_name, last_name) VALUES ('investor@gmail.com', 'asdf', 'test', 'test');
+INSERT INTO investors (email, password, first_name, last_name) VALUES ('investor@gmail.com', 'asdf', 'Investor', 'the Great');

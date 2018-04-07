@@ -2,7 +2,7 @@
 	<div class="user-block">
 
 		<div class="user-block__company-logo">
-			<img src="/dist/assets/images/placeholder-logo.svg" alt="">
+			<img src="<?php echo $user['icon_url'] ?>" alt="">
 		</div>
 
 		<div class="user-block__name-picture-wrap">
@@ -11,7 +11,7 @@
 				<p class="user-block__title"><?php echo $user['email']; ?></p>
 			</div>
 
-			<img class="user-block__profile-picture" src="/dist/assets/images/placeholder-logo.svg" alt="">
+            <img class="user-block__profile-picture" src="<?php echo $user['profile_url'] ?>" alt="">
 		</div>
 
 		<p class="user-block__description">
