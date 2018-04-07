@@ -7,21 +7,19 @@
 
 		<div class="user-block__name-picture-wrap">
 			<div>
-				<h1 class="user-block__name">John Smith</h1>
-				<p class="user-block__title">CEO of something.ltd</p>
+				<h1 class="user-block__name"><?php echo $user['name']; ?></h1>
+				<p class="user-block__title"><?php echo $user['email']; ?></p>
 			</div>
 
 			<img class="user-block__profile-picture" src="dist/assets/images/placeholder-logo.svg" alt="">
 		</div>
 
 		<p class="user-block__description">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur corporis enim laborum nam!
-			Cumque eaque incidunt nam quo soluta, veritatis? Cumque cupiditate deleniti, expedita in iure nemo nihil
-			voluptates!
+            <?php echo $user['description']; ?>
 		</p>
 
 		<div class="user-block__video-wrap">
-		<iframe class="user-block__video" src="https://www.youtube.com/embed/biqyq0PTEUM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="user-block__video" src="<?php echo $user['pitch_url']; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 
 	</div>
