@@ -11,9 +11,9 @@
           <i class="material-icons mdc-tab__icon" aria-hidden="true">people</i>
           <span class="mdc-tab__icon-text">Matches</span>
         </a>
-        <a class="mdc-tab mdc-tab--with-icon-and-text" href="explore">
+        <a class="mdc-tab mdc-tab--with-icon-and-text" href="match-making-machine">
           <i class="material-icons mdc-tab__icon" aria-hidden="true">explore</i>
-          <span class="mdc-tab__icon-text">Explore</span>
+          <span class="mdc-tab__icon-text">Match maker</span>
         </a>
         <a class="mdc-tab mdc-tab--with-icon-and-text" href="notifications">
           <i class="material-icons mdc-tab__icon" aria-hidden="true">notifications</i>
@@ -28,5 +28,6 @@
         <span class="mdc-tab__icon-text">MENU</span>
       </a>
     </section>
+    <div class="mdc-menu" tabindex="-1">
   </div>
 </header>
