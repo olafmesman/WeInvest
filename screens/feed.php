@@ -13,7 +13,7 @@
 	  </div>
 	</body>
     <?php
-    foreach(fetch_all("SELECT e.id as id, CONCAT(e.first_name, ' ', e.last_name) as name, e.email as email, ep.description as description, ep.pitch_url as pitch_url FROM entrepreneurs as e JOIN entrepreneur_profiles as ep ON e.id = ep.id") as &$user) {
+    foreach(fetch_all("SELECT ep.logo_url as icon_url, ep.profile_picture_url as profile_url, e.id as id, CONCAT(e.first_name, ' ', e.last_name) as name, e.email as email, ep.description as description, ep.pitch_url as pitch_url FROM entrepreneurs as e JOIN entrepreneur_profiles as ep ON e.id = ep.id") as &$user) {
         include 'components/feed-user-block.php';
     }
     ?>
