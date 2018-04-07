@@ -10,10 +10,14 @@
 				<h1 class="user-block__name"><?php echo $user['name']; ?></h1>
 				<p class="user-block__title"><?php echo $user['email']; ?></p>
 			</div>
-            <p>
-                <a href="/match-making-machine">Go to the match making machine!</a>
-    		</p>
 		</div>
+        <p class="user-block__description">
+            Lifetime entrepreneur and angel investor. Mostly interested in Digital Services.
+            <br /><br />
+            What I Do :Start-up mentor, network of internet entrepreneurs. 15+ yrs experience as entrepreneur and operator across different stages, markets and geographies - lots of mistakes to learn from. Relationships I've built along the wayLocations : Amsterdam / AccraMarkets : Internet, E-Commerce, SaaS, Social Media, Mobilw, Software, Analytics, Marketplaces, Real Time, Messaging, Enterprises, Big Data, Financial Services, Cloud Computing, Food and Beverages, Education, K-12 Education
+            <br>
+            <button href="/match-making-machine">Go to the match making machine!</button>
+        </p>
 
 	</div>
 </div>
