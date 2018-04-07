@@ -1,0 +1,34 @@
+.general-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.components {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  padding: $gutter;
+}
+
+.description {
+  max-width: 300px;
+}
+
+.register-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.register {
+  // max-width: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mdc-tab .icon-black {
+  color: black;
+}

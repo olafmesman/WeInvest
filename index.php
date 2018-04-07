@@ -8,8 +8,12 @@ session_start();
 
 // Route it up!
 switch ($request_uri[0]) {
-	// Home page
+	// Landing page
 	case '/':
+		require './screens/landing-page.php';
+		break;
+	// Landing page
+	case '/home':
 		require './screens/home.php';
 		break;
 	// Login page
@@ -19,6 +23,10 @@ switch ($request_uri[0]) {
 	// Register page
 	case '/register':
 		require './screens/register.php';
+		break;
+	// Register page
+	case '/profile':
+		require './screens/profile-entrepreneur.php';
 		break;
 	// Everything else
 	default:
