@@ -39,7 +39,7 @@
 
 
 		<div class="user-block__video-wrap">
-		<iframe class="user-block__video" src="<?php echo $user['pitch_url']; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="user-block__video" src="<?php echo $user['pitch_url']; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 
 	</div>

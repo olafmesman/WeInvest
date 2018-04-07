@@ -18,7 +18,7 @@
 				require './screens/404.php';
 			}
 		} else if (substr($request_uri[0], 0, strlen("/profile/e/")) === "/profile/e/") {
-			$user = fetch_record("SELECT ep.logo_url as icon_url, ep.profile_picture_url as profile_url, CONCAT(e.first_name, ' ', e.last_name) as name, e.email as email, ep.description as description, ep.pitch_url as pitch_url FROM entrepreneurs as e JOIN entrepreneur_profiles as ep ON e.id = ep.id WHERE e.id=" . substr($request_uri[0], strlen("/profile/e/"), 2));
+			$user = fetch_record("SELECT e.id as id, ep.logo_url as icon_url, ep.profile_picture_url as profile_url, CONCAT(e.first_name, ' ', e.last_name) as name, e.email as email, ep.description as description, ep.pitch_url as pitch_url FROM entrepreneurs as e JOIN entrepreneur_profiles as ep ON e.id = ep.id WHERE e.id=" . substr($request_uri[0], strlen("/profile/e/"), 2));
 			if ($user) {
 				require './screens/profile-entrepreneur.php';
 			} else {
@@ -48,6 +48,10 @@
 			// Feed page
 			case '/feed':
 				require './screens/feed.php';
+				break;
+			// Matches page
+			case '/matches':
+				require './screens/matches.php';
 				break;
 			case '/profile':
 				header('Location: /profile/' . substr($_SESSION['user_type'], 0, 1) . '/' . $_SESSION['user_id']);
