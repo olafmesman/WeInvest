@@ -64,3 +64,13 @@ VALUES ('kyraelhalabi@gmail.com', 'asdf', 'Kyra', 'El Halabi', 1);
 
 
 INSERT INTO investors (email, password, first_name, last_name) VALUES ('investor@gmail.com', 'asdf', 'Investor', 'the Great');
+
+
+
+INSERT INTO entrepreneur_profiles (description, profile_picture_url, pitch_url, logo_url)
+VALUES (
+  'My TicketGH provides E-ticketing services to consumers and players within the transport and event industry. We allows consumers to purchase their tickets by just a click of the mouse button of your computer or a tap on the keypad of your cell phone and tablet. Besides the E-ticketing services, MyTicketGH also has IT transformation software packages for bus operators that help them digitalizing their processes on the aspects of sales, customer data, CRM and reporting.'
+    '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile3.jpg',
+    '/assets/profile_icon_entrepreneurs/pitch1.png',
+    '/assets/profile_icon_entrepreneurs/lead_icon1.png'
+);

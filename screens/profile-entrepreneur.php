@@ -8,7 +8,7 @@
 
 	<?php include 'components/user-block.php'; ?>
 
-	<?php include 'components/match-making-widget.php'; ?>
+	<?php //include 'components/match-making-widget.php'; ?>
 
 </main>
 
