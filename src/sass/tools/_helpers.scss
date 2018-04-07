@@ -58,3 +58,18 @@
 	overflow: auto;
 	z-index: 999;
 }
+
+
+.display-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 720px) {
+	.display-desktop {
+		display: none;
+	}
+
+	.display-mobile {
+		display: flex;
+	}
+}
