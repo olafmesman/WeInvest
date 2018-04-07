@@ -30,11 +30,11 @@ To see the home page go to
 
 ### As entrepreneur
 email: eunice@gmail.com
-password: does not matter
+password: asdf
 
 email: samtettey@gmail.com
-password: does not matter
+password: asdf
 
 ### As investor
 email: investor@gmail.com
-password: does not matter
+password: asdf
