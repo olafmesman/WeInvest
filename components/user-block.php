@@ -17,8 +17,26 @@
 		<p class="user-block__description">
             <?php echo $user['description']; ?>
 		</p>
+        <?php if (!fetch_record("SELECT * FROM matches WHERE entrepreneurs_id = ".$user['id']." AND investors_id = ".$_SESSION['user_id'])): ?>
+        <form action="/logic/match.php" method="POST">
+            <input type="hidden" name="entrepreneur_id" value="<?php echo $user['id'] ?>" />
+            <input type="hidden" name="url" value="<?php echo $request_uri[0] ?>" />
+    		<button class="mdc-button mdc-button-margin margin-bottom">SEND MATCHING REQUEST</button>
+        </form>
+        <?php elseif (fetch_record("SELECT status FROM matches WHERE entrepreneurs_id = ".$user['id']." AND investors_id = ".$_SESSION['user_id'])['status'] == 0): ?>
+            <form action="/logic/match.php" method="POST">
+                <input type="hidden" name="entrepreneur_id" value="<?php echo $user['id'] ?>" />
+                <input type="hidden" name="url" value="<?php echo $request_uri[0] ?>" />
+        		<button class="mdc-button mdc-button-margin margin-bottom">ACCEPT MATCH</button>
+            </form>
+        <?php else: ?>
+            <form action="/logic/match.php" method="POST">
+                <input type="hidden" name="entrepreneur_id" value="<?php echo $user['id'] ?>" />
+                <input type="hidden" name="url" value="<?php echo $request_uri[0] ?>" />
+        		<button class="mdc-button mdc-button-margin margin-bottom">REMOVE MATCH</button>
+            </form>
+        <?php endif; ?>
 
-		<button class="mdc-button mdc-button-margin margin-bottom" href="/matchmaker">SEND MATCHING REQUEST</button>
 
 		<div class="user-block__video-wrap">
 		<iframe class="user-block__video" src="<?php echo $user['pitch_url']; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
