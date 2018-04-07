@@ -18,6 +18,8 @@
             <?php echo $user['description']; ?>
 		</p>
 
+		<button class="mdc-button mdc-button-margin margin-bottom" href="/matchmaker">SEND MATCHING REQUEST</button>
+
 		<div class="user-block__video-wrap">
 		<iframe class="user-block__video" src="<?php echo $user['pitch_url']; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
