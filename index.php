@@ -24,9 +24,13 @@ switch ($request_uri[0]) {
 	case '/register':
 		require './screens/register.php';
 		break;
-	// Register page
+	// Profile page
 	case '/profile':
 		require './screens/profile-entrepreneur.php';
+		break;
+	// Feed page
+	case '/feed':
+		require './screens/feed.php';
 		break;
 	// Everything else
 	default:
