@@ -11,7 +11,12 @@
 			<img class="user-block__profile-picture" src="/dist/assets/images/placeholder-logo.svg" alt="">
 		</div>
 		<p class="user-block__description">
-            <?php echo $user['description']; ?>
+            <?php
+            if (strlen($user['description']) > 175)
+                echo substr($user['description'], 0, 170) . "...";
+            else
+                echo $user['description'];
+            ?>
 		</p>
     <button class="mdc-button" onClick="location.href='/profile/e/<?php echo $user['id'] ?>'">Go to profile</button>
 	</div>
