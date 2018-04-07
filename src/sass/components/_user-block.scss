@@ -12,8 +12,21 @@
 	box-shadow: 0 0 15px #aaaaaa;
 	max-width: 600px;
 	border-radius: 5px;
-	padding: $gutter;
+	padding: $gutter $gutter $gutter*2;
 	margin-top: 85px;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: '';
+		height: 15px;
+		width: 100%;
+		background-color: $color-primary;
+		bottom: 0;
+		left: 0;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
 }
 
 .user-block__company-logo {
