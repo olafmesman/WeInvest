@@ -47,6 +47,13 @@ if (substr($request_uri[0], 0, strlen("/profile/")) === "/profile/") {
         case '/register':
         require './screens/register.php';
         break;
+        // Feed page
+        case '/feed':
+        require './screens/feed.php';
+        break;
+        case '/profile':
+        header('Location: /profile/'.substr($_SESSION['user_type'],0,1).'/'.$_SESSION['user_id']);
+        break;
         // Everything else
         default:
         header('HTTP/1.0 404 Not Found');

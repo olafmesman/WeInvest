@@ -2,7 +2,7 @@
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
       <nav id="icon-text-tab-bar" class="mdc-tab-bar mdc-tab-bar--icons-with-text">
-        <img class="logo" src="assets/we_invest-2.png"/>
+        <a href="/profile"><img class="logo" src="/assets/we_invest-2.png" href/></a>
       </nav>
     </section>
     <section id="iconSection" class="display-desktop mdc-top-app-bar__section mdc-top-app-bar__section--align-end">

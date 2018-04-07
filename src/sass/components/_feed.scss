@@ -1,0 +1,21 @@
+.general-wrapper-feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	padding: $gutter*2;
+}
+
+.component-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.mdc-button {
+	margin-top: 0;
+}
