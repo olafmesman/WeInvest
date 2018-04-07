@@ -14,11 +14,7 @@ INSERT INTO posts (content, image_url, entrepreneurs_id) VALUES ('Forty-four cou
 --   '/assets/data_feed_photos/datafeed_picture5.png',
 --   5);
 -- 
-INSERT INTO posts (content, image_url, entrepreneurs_id)
- VALUES (
-   'Test content verhaal voor de lead entrepreneurs. Test content verhaal voor de lead entrepreneurs.',
-   '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile1.jpg',
-   3);    INSERT INTO posts (content, image_url, entrepreneurs_id)
+    INSERT INTO posts (content, image_url, entrepreneurs_id)
    VALUES (
      'Test content verhaal voor de lead entrepreneurs. Test content verhaal voor de lead entrepreneurs',
      '/assets/profile_pictures_lead_entrepreneurs/entrepreneur_leadprofile2.jpg',

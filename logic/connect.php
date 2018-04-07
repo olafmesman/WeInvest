@@ -4,8 +4,8 @@
 //adjust the values below to match your database settings
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'root'); //set DB_PASS as 'root' if you're using mac
-define('DB_DATABASE', 'twitter'); //make sure to set your database
+define('DB_PASS', ''); //set DB_PASS as 'root' if you're using mac
+define('DB_DATABASE', 'WeInvest'); //make sure to set your database
 //connect to database host
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_DATABASE);
 //make sure connection is good or die

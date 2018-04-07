@@ -9,7 +9,7 @@
 	<?php include 'components/user-block.php'; ?>
     <?php
     foreach (fetch_all("SELECT * FROM posts WHERE entrepreneurs_id = ".$user['id']) as &$post) {
-        include 'components/post.php';
+        include 'components/post-block.php';
     }
     ?>
 
