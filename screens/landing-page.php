@@ -21,6 +21,7 @@
 </header>
 <body>
   <div class="general-wrapper">
+    <div class="component-wrapper">
     <div class="components">
       <div class="description">
         <h1>WeInvest</h1>
@@ -28,18 +29,17 @@
       </div>
       <div class="register">
         <div class="register-column">
-          <a href="/register/investor">Investor</a>
+          <button class="mdc-button" href="/register/investor">Investor</button>
           <p>As an investor you will be able to connect entrepreneurs that match your preferences.</p>
         </div>
+          <img class="handshake" src="assets/handshake.jpg">
         <div class="register-column">
-          <a class="mdc-tab"><i class="material-icons mdc-tab__icon icon-black">swap horiz</i></a>
-        </div>
-        <div class="register-column">
-          <a href="/register/entrepreneur">Entrepreneur</a>
+          <button class="mdc-button" href="/register/entrepreneur">Entrepreneur</button>
           <p>As an entrepreneur you will be able to promote your business and build relationships with investors to attract funding.</p>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 </html>
