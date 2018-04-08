@@ -1,0 +1,43 @@
+.mdc-tab-bar {
+  margin: 0;
+}
+
+.mdc-tab {
+  color: white;
+  padding: 0;
+}
+
+.mdc-tab .mdc-tab__icon {
+  color: white;
+}
+
+.mdc-tab:hover .mdc-tab__icon {
+  color: white;
+}
+
+.mdc-tab .mdc-tab__icon-text {
+  padding-top: 0;
+  font-size: 10px;
+}
+
+.mdc-tab:hover .mdc-tab__icon-text {
+  color: white;
+}
+
+.mdc-top-app-bar {
+  overflow: hidden;
+  background-color: $color-primary;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.mdc-tab--with-icon-and-text:hover {
+  background-color: $color-primary;
+  opacity: 0.5;
+}
+
+.logo {
+  padding-top: 20px;
+  max-height: 60px;
+}

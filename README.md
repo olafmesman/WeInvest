@@ -2,7 +2,7 @@
 
 ## Setup
 
-To start the app first install the node modules 
+To start the app first install the node modules
 
 with the cmd
 
@@ -22,6 +22,19 @@ To start the local dev server use the cmd
 
 `yarn server`
 
-To see the home page go to 
+To see the home page go to
 
 >http://localhost:8000/
+
+## Login
+
+### As entrepreneur
+email: eunice@gmail.com
+password: asdf
+
+email: samtettey@gmail.com
+password: asdf
+
+### As investor
+email: investor@gmail.com
+password: asdf

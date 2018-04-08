@@ -1,5 +1,6 @@
 import config from './config.babel';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const clientSetup = {
 	entry: {
@@ -38,7 +39,19 @@ const clientSetup = {
 					}, {
 						loader: 'sass-loader',
 						options: {
-							sourceMap: true
+							sourceMap: true,
+							importer: function(url, prev) {
+								if (url.indexOf('@material') === 0) {
+									const filePath = url.split('@material')[1];
+									const nodeModulePath = `./node_modules/@material/${filePath}`;
+									return {
+										file: require('path').resolve(nodeModulePath)
+									};
+								}
+								return {
+									file: url
+								};
+							}
 						}
 					}, {
 						loader: 'import-glob-loader'
@@ -61,7 +74,10 @@ const clientSetup = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: "[name].css"
-		})
+		}),
+		new CopyWebpackPlugin([
+			{ from: `${config.entry}/assets`, to: 'assets' }
+		])
 	]
 };
 
